@@ -31,7 +31,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hi 👋 Einstein Amarjeet Sir ! How are You?\n\n☞ I'm a High Speed **Txt File** Downloader Bot.\n\n☞ I can Download **Videos & Pdf** From Your **TXT** File.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** Einstein Amarjeet\n")
+    editable = await m.reply_text(f"Hi 👋 ͢🦋⃟≛⃝𝗘𝗶𝗻𝘀𝘁𝗲𝗶𝗻_𝗔𝗺𝗮𝗿𝗷𝗲𝗲𝘁⃝❤ ! How are You?\n\n☞ I'm a High Speed **Txt File** Downloader Bot.\n\n☞ I can Download **Videos & Pdf** From Your **TXT** File send command /txt or download vision ias command /vpdf.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** ͢🦋⃟≛⃝𝗘𝗶𝗻𝘀𝘁𝗲𝗶𝗻_𝗔𝗺𝗮𝗿𝗷𝗲𝗲𝘁⃝❤")
   
 
 @bot.on_message(filters.command("stop"))
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name**\n**Ex : ** Einstein Amarjeet™")
+    await editable.edit("**Enter Your Name**\n**Ex : ** ͢🦋⃟≛⃝𝗘𝗶𝗻𝘀𝘁𝗲𝗶𝗻_𝗔𝗺𝗮𝗿𝗷𝗲𝗲𝘁⃝❤")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -200,7 +200,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading:-**\n\n**Title ➤** `{name}`\n**Quality ➤** `{raw_text2}`\n\n**Bot By ➤ **Einstein Amarjeet")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n**Title ➤** `{name}`\n**Quality ➤** `{raw_text2}`\n\n**Bot Made By ➤ **Einstein Amarjeet")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -217,7 +217,7 @@ async def account_login(bot: Client, m: Message):
     await m.reply_text("Done ✅")
 @bot.on_message(filters.command(["vpdf"]))
 async def vision_pdf(bot: Client, m: Message):
-    editable = await m.reply_text("Hi 👋 Sir!\n\nHow are You ?\n\n☞ I'm **Vision Pdf** Downloader Bot.\n\n☞ Send ' /vpdf ' Command to Download **Vision IAS** Pdf.\n\n☞ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 : Einstein Amarjeet\n")
+    editable = await m.reply_text("Hi 👋 Sir!\n\nHow are You ?\n\n☞ I'm **Vision Pdf** Downloader Bot.\n\n☞ Send ' /vpdf ' Command to Download **Vision IAS** Pdf.\n\n☞ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 : ͢🦋⃟≛⃝𝗘𝗶𝗻𝘀𝘁𝗲𝗶𝗻_𝗔𝗺𝗮𝗿𝗷𝗲𝗲𝘁⃝❤\n")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -258,7 +258,7 @@ async def vision_pdf(bot: Client, m: Message):
             url = links[i][1]
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/","").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").strip()[:57]
             name = f'{str(count).zfill(3)}) {name1}'
-            cc = f'{str(count).zfill(3)}. {name1}.pdf\n\n**Batch:-** {raw_texty}\n\n**Extracted By ➤** Einstein Amarjeet'
+            cc = f'{str(count).zfill(3)}. {name1}.pdf\n\n**Batch:-** {raw_texty}\n\n**Extracted By ➤** ͢🦋⃟≛⃝𝗘𝗶𝗻𝘀𝘁𝗲𝗶𝗻_𝗔𝗺𝗮𝗿𝗷𝗲𝗲𝘁⃝❤'
             ka = await helper.vision(url, name, cookies)
             await m.reply_document(ka, caption=cc)
             count += 1
@@ -266,6 +266,6 @@ async def vision_pdf(bot: Client, m: Message):
             time.sleep(3)
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done Ho Gya Einstein Amarjeet Sir✅")
+    await m.reply_text("Done Ho Gya  ͢🦋⃟≛⃝𝗘𝗶𝗻𝘀𝘁𝗲𝗶𝗻_𝗔𝗺𝗮𝗿𝗷𝗲𝗲𝘁⃝❤ Sir✅")
     
 bot.run()
