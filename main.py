@@ -24,7 +24,7 @@ import os
 import math
 
 bot = Client("bot",
-             bot_token= "7154922307:AAFwL_1D8hEq6xo9CEKuPXeU-g7qYQKRjaI",
+             bot_token= "7091437096:AAFJEcr3Zx57CdRBD56jmxcD8jft7Y9WXOU",
              api_id= 9438917,
              api_hash= "b86192c6db595de8e8863b43648c55da"
 )
